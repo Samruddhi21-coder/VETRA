@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Portfolio Container */
+  .portfolio-container {
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    padding: 20px;
+    background-color: #0c0909; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px; /* Limit the width */
+    margin: 20px auto; /* Center the container */
+  }
+  
+  /* Fade-in Effect */
+  .portfolio-container.fade-in {
+    opacity: 1;
+  }
+  
+  /* Portfolio Content */
+  .portfolio-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0e9f2; /* Light gray background for content */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Quiz Section */
+  .quiz-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e9ecef; /* Light gray background for quiz */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin: 5px; /* Space between buttons */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Quiz Options */
+  .quiz-section button {
+    background-color: #28a745; /* Green for quiz options */
+  }
+  
+  .quiz-section button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Headings */
+  h1 {
+    color: #efe3e3; /* Darker text for headings */
+  }
+  
+  h2 {
+    color: #007bff; /* Blue color for subheadings */
+  }
+  
+  h3 {
+    color: #dc3545; /* Red color for score */
+  }

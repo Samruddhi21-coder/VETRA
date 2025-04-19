@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: auto; /* Prevent scrollbars */
+}
+
+body {
+    animation: brightBackground 10s infinite alternate;
+}
+
+@keyframes brightBackground {
+    0% {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    }
+    25% {
+        background: linear-gradient(135deg, #ff6a88, #ffcc70);
+    }
+    50% {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    }
+    75% {
+        background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    }
+    100% {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    }
+}
+
+.about-container {
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.name {
+    font-size: 3em;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.skills-title {
+    font-size: 2em;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #4a90e2;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background-color: #357ab8;
+}
+
+/* About Me Section */
+.about-me {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #dcdfd2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-me h2 {
+    text-align: center;
+    color: #1e82b5;
+}
+
+.about-me p {
+    text-align: center;
+    color: #555;
+}
+
+.qualities {
+    margin-top: 20px;
+}
+
+.qualities h3 {
+    text-align: center;
+    color: #333;
+}
+
+.qualities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.qualities li {
+    padding: 10px;
+    font-size: 18px;
+    color: #444;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start slightly lower for animation */
+    animation: fadeInUp 0.5s forwards; /* Animation for each item */
+}
+
+.fade-in {
+    animation: fadeInUp 0.5s forwards; /* Animation for each item */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

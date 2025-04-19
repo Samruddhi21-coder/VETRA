@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "loginvetra21",
+    "firebase use <your-new-project-alias>": "loginvetra21"
+  },
+  "targets": {},
+  "etags": {}
+}
